@@ -1,0 +1,31 @@
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  /* font-size: 25px; */
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 3px solid #f0f2f2;
+  border-width: 10%;
+}
+
+.logo {
+  padding: 0.5rem;
+}
+
+.logo img {
+  width: 150px;
+}
+
+#basic-nav-dropdown {
+  color: white;
+}
+
+#nav_center {
+  margin-left: 100px;
+}
