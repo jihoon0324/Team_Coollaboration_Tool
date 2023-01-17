@@ -24,8 +24,5 @@ header {
 
 #basic-nav-dropdown {
   color: white;
-}
-
-#nav_center {
-  margin-left: 100px;
+  font-size: 1.5rem;
 }

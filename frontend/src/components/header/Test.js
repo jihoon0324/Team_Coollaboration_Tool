@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from "react";
-import "./Header.css";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import { Navbar, Container, Nav, NavDropdown, Row, Col } from "react-bootstrap";
-import Hamburger from "hamburger-react";
+import "./Header.css";
 import logo from "../../assets/logo.png";
-
-const Header = () => {
+const Test = () => {
   const [logInUser, setLogInUser] = useState("username");
   const [logIn, setLogIn] = useState(true);
-  const [adminRole, setAdminRole] = useState(1);
 
   return (
     <header>
@@ -20,20 +16,8 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link
-                className=" fs-4"
-                style={{ color: "white" }}
-                href="#features"
-              >
-                About
-              </Nav.Link>
-              <Nav.Link
-                className=" fs-4"
-                style={{ color: "white" }}
-                href="#pricing"
-              >
-                Projects
-              </Nav.Link>
+              <Nav.Link href="#features">About</Nav.Link>
+              <Nav.Link href="#pricing">Projects</Nav.Link>
               {logIn && (
                 <Nav.Link
                   href="#link"
@@ -81,4 +65,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Test;
