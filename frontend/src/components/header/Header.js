@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
-import { Navbar, Container, Nav, NavDropdown, Row, Col } from "react-bootstrap";
 import Hamburger from "hamburger-react";
+import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+
 import logo from "../../assets/logo.png";
 
 const Header = () => {
   const [logInUser, setLogInUser] = useState("username");
   const [logIn, setLogIn] = useState(true);
-  const [adminRole, setAdminRole] = useState(1);
 
   return (
     <header>
@@ -17,7 +16,10 @@ const Header = () => {
           <Navbar.Brand className="logo" href="#home">
             <img src={logo} alt="" />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+          <Navbar.Toggle aria-controls="responsive-navbar-nav">
+            <Hamburger direction="right" />
+          </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link
