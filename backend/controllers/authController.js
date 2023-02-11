@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 //register
-authController.post("/register", async (req, res) => {
+authController.post("/joinUs", async (req, res) => {
   try {
     const isExisting = await User.findOne({ email: req.body.email });
     if (isExisting) {

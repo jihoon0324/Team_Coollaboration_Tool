@@ -7,7 +7,7 @@ import logo from "../../assets/logo.png";
 
 const Header = () => {
   const [logInUser, setLogInUser] = useState("username");
-  const [logIn, setLogIn] = useState(true);
+  const [logIn, setLogIn] = useState(false);
 
   return (
     <header>
@@ -25,7 +25,7 @@ const Header = () => {
               <Nav.Link
                 className=" fs-4"
                 style={{ color: "white" }}
-                href="#features"
+                href="#about"
               >
                 About
               </Nav.Link>
@@ -60,14 +60,14 @@ const Header = () => {
               ) : (
                 <>
                   <Nav.Link
-                    href=""
+                    href="/signIn"
                     style={{ color: "white" }}
                     className=" fs-4"
                   >
                     Sing In
                   </Nav.Link>
                   <Nav.Link
-                    href=""
+                    href="/joinUs"
                     style={{ color: "white" }}
                     className=" fs-4"
                   >
