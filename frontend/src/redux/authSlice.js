@@ -9,21 +9,21 @@ export const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
-    // login(state, action) {
-    //   localStorage.clear()
-    //   state.user = action?.payload?.others
-    //   state.token = action?.payload?.token
-    // },
+    login(state, action) {
+      localStorage.clear();
+      state.user = action?.payload?.others;
+      state.token = action?.payload?.token;
+    },
     register(state, action) {
       localStorage.clear();
       state.user = action?.payload?.others;
       state.token = action?.payload?.token;
     },
-    // logout(state) {
-    //    state.user = null
-    //    state.token = null
-    //    localStorage.clear()
-    // },
+    logout(state) {
+      state.user = null;
+      state.token = null;
+      localStorage.clear();
+    },
   },
 });
 

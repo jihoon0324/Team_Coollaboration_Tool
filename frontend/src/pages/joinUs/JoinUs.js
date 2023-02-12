@@ -20,7 +20,7 @@ const JoinUs = () => {
     e.preventDefault();
     console.log(formValues);
     try {
-      const res = await fetch(`http://localhost:5000/users/joinus`, {
+      const res = await fetch(`http://localhost:5000/users/joinUs`, {
         headers: {
           "Content-Type": "application/json",
         },
