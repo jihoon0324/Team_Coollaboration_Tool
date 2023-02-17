@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 
 import Home from "./pages/home/Home";
 import JoinUs from "./pages/joinUs/JoinUs";
+import Projects from "./pages/projects/projects";
 import SignIn from "./pages/signIn/SignIn";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signIn" element={<SignIn />} />
         <Route path="/joinUs" element={<JoinUs />} />
-        <Route path="/projects" element={<Project />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
 
       <Footer />
