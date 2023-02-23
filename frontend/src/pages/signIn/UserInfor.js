@@ -1,7 +1,7 @@
 import React from "react";
 
 const UserInfor = () => {
-  return <div>UserInformation</div>;
+  return <div>UserInformationtest</div>;
 };
 
 export default UserInfor;
